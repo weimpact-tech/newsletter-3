@@ -130,24 +130,6 @@
 			border: 1px solid #BBBBBB;
 		}
 
-		#botaoRoxo {
-			border: none;
-			margin: 20px;
-			font-weight: 700;
-			font-family: 'Open Sans', sans-serif;
-			font-size: 15px;
-			height: 25px;
-			color: #ffffff;
-			background-color: #48139a;
-		}
-
-		#subTituloWin {
-			padding-left: 20px;
-			padding-right: 20px;
-			font-family: 'Poppins', sans-serif;
-			font-size: 14px;
-		}
-
 		/**
 			* @tab Page
 			* @section heading 1
@@ -462,24 +444,26 @@
 			font-style: italic;
 		}
 
-		#templateBlocoCompartilhe {
+		#templateFundoBranco {
+			display: inline-block;
+			width: 100%
+		}
+
+		#templateFundoRoxo {
 			text-align: center;
 			background-color: #48139a;
 			display: inline-block;
 			width: 100%
 		}
 
-		#pBlocoCompartilhe {
-			margin: 50px 50px;
-			font-family: 'Poppins', sans-serif;
-			font-weight: 600;
-			font-size: 18px;
-			color: #ffffff;
-
+		#templateFundoVerde {
+			background-color: #52919e;
 		}
 
-		#templateDiversidadeNaPratica {
-			background-color: #52919e;
+		#templateImagemDoLadoDoTitulo {
+			display: flex;
+			justify-content: space-evenly;
+			padding: 5% 5% 0% 5%;
 		}
 
 		#h3Branco {
@@ -491,15 +475,67 @@
 			padding-bottom: 20px;
 		}
 
+		#h3Roxo {
+			font-size: 21px;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 700;
+			margin: 25px 0px 0px;
+			color: #48139a !important;
+			padding-bottom: 20px;
+		}
+
+		#botaoRoxo {
+			border: none;
+			margin: 20px;
+			font-weight: 700;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 15px;
+			height: 25px;
+			color: #ffffff;
+			background-color: #48139a;
+		}
+
+		#botaoLaranja {
+			border: none;
+			margin: 20px;
+			font-weight: 700;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 15px;
+			height: 25px;
+			color: #ffffff;
+			background-color: #bb3d22;
+		}
+
+		#subTituloWin {
+			padding-left: 20px;
+			padding-right: 20px;
+			font-family: 'Poppins', sans-serif;
+			font-size: 14px;
+			text-align: center;
+		}
+
+		p {
+			text-align: justify;
+		}
+
 		#pBranco {
 			padding-left: 20px;
 			padding-right: 20px;
-			text-align: justify;
 			font-size: 18px;
 			font-family: 'Open Sans', sans-serif;
 			margin: 25px 0px 20px;
 			color: white;
 		}
+
+		#pBlocoCompartilhe {
+			margin: 50px 50px;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 600;
+			font-size: 18px;
+			color: #ffffff;
+
+		}
+
 
 		/* ========== Footer Styles ========== */
 
@@ -789,7 +825,7 @@
 
 											<!-- BEGIN ARTIGO DESTAQUE // -->
 											<table border="0" cellpadding="0" cellspacing="0" width="100%"
-												id="templateArtigoDestaque">
+												id="templateFundoBranco">
 												<tr>
 													<td valign="top" class="bodyContent" mc:edit="body_content">
 														<h1>#1</h1>
@@ -834,7 +870,7 @@
 
 											<!-- BEGIN BLOCO COMPARTILHE // -->
 											<table border="0" cellpadding="0" cellspacing="0" width="100%"
-												id="templateBlocoCompartilhe">
+												id="templateFundoRoxo">
 												<tr>
 													<td valign="top" class="bodyContent" mc:edit="body_content">
 														<p id="pBlocoCompartilhe">
@@ -856,7 +892,7 @@
 
 											<!-- BEGIN #WIN – WE IMPACT NETWORK // -->
 											<table border="0" cellpadding="0" cellspacing="0" width="100%"
-												id="templateWin">
+												id="templateFundoBranco">
 												<tr>
 													<td valign="top" class="bodyContent" mc:edit="body_content">
 														<h3>
@@ -926,7 +962,7 @@
 
 											<!-- BEGIN #DIVERSIDADENAPRÁTICA // -->
 											<table border="0" cellpadding="0" cellspacing="0" width="100%"
-												id="templateDiversidadeNaPratica">
+												id="templateFundoVerde">
 												<tr>
 													<td valign="top" class="bodyContent" mc:edit="body_content">
 														<h3 id="h3Branco">
@@ -975,7 +1011,161 @@
 											<!-- END #DIVERSIDADENAPRÁTICA // -->
 
 
+											<!-- BEGIN #DICADACEO // -->
+											<table border="0" cellpadding="0" cellspacing="0" width="100%"
+												id="templateFundoRoxo">
+												<tr>
+													<td valign="top" class="bodyContent" mc:edit="body_content">
+														<h3 id="h3Branco">
+															#DicadaCEO
+														</h3>
+														<img src="https://weimpact-tech.github.io/newsletter/img/foto-dica-da-ceo.png"
+															alt="foto em preto e branco da CEO da WE IMPACT, Lícia"
+															style="width: 140px;" />
+														<h3 id="h3Branco">
+															Nossa busca por uma DevWeb e o conceito de ações afirmativas
+														</h3>
+														<p id="pBranco">
+															Para conseguir resultados mais potentes e sustentáveis,
+															aposte na diversidade. Entretanto, é
+															necessário que esta aposta seja feita de maneira coerente e
+															responsável. A organização deve se
+															responsabilizar por criar um ambiente que conduza as
+															relações entre os diferentes perfis de seus
+															‘recursos humanos’, para que seja possível que todos
+															desenvolvam seus potenciais, viabilizando
+															correlacionar produtividade e retorno. Não basta montar uma
+															equipe e liderança diversas - é
+															necessário pavimentar o caminho para que se chegue à
+															equidade de oportunidades e potencialidades
+															dentro do ambiente de trabalho.
+														</p>
+														<p id="pBranco" align="center">
+															<i>
+																– Lícia Souza, CEO da WE Impact
+															</i>
+														</p>
+													</td>
+												</tr>
+											</table>
+											<!-- END #DICADACEO // -->
+
+
+											<!-- BEGIN #ELASIMPACTAM // -->
+											<table border="0" cellpadding="0" cellspacing="0" width="100%"
+												id="templateFundoBranco">
+												<tr>
+													<td valign="top" class="bodyContent" mc:edit="body_content">
+														<h3 id="h3Roxo">
+															#ELASIMPACTAM
+														</h3>
+														<img src="https://weimpact-tech.github.io/newsletter/img/foto-elas-impactam.png"
+															alt="foto em preto e branco com ilustação de punhos fechados de várias etnias levantados" />
+														<p>
+															Durante o mês da mulher, a
+															<a href="https://www.mobees.com.br/" target="_blank">
+																Mobees</a>, pioneira em mídia exterior
+															digital sobre carros de aplicativos, lançou a campanha ‘Elas
+															que movem’ para movimentar
+															o empreendedorismo feminino!
+														</p>
+														<p>
+															Convocando empresas que apoiam a luta feminina por
+															oportunidades e representatividade
+															nesse mercado, a startup, cofundada pela Flávia Coelho,
+															prometeu reverter 30% das
+															suas vendas de março em divulgação gratuita de negócios
+															locais liderados por mulheres.
+														</p>
+														<p>
+															A previsão é de gerar, agora em abril, mais de 50 milhões de
+															impactos para essas marcas
+															nas ruas do Rio de Janeiro, cidade natal da adtech.</p>
+													</td>
+												</tr>
+											</table>
+											<!-- END #ELASIMPACTAM // -->
+
+
+											<!-- BEGIN #NAMIDIA // -->
+											<table border="0" cellpadding="0" cellspacing="0" width="100%"
+												id="templateFundoBranco">
+												<tr>
+													<td valign="top" class="bodyContent" mc:edit="body_content">
+														<h3 id="h3Roxo">
+															#Namídia
+														</h3>
+														<div id="templateImagemDoLadoDoTitulo">
+															<h3 id="h3Roxo">
+																Startup que facilita gestão de aulas online recebe
+																investimento
+															</h3>
+															<img src="https://weimpact-tech.github.io/newsletter/img/foto-namidia.png"
+																alt="foto em preto e branco com ilustação de punhos fechados de várias etnias levantados" />
+														</div>
+														<p>
+															Nossa investida <a href=" https://pontue.com.br/"
+																target="_blank">Pontue</a>, plataforma SaaS de
+															aprendizagem,
+															encerrou sua
+															primeira rodada de
+															investimento com aportes também do Eleva Educação e da WIM
+															Angels. A cofundadora e CEO
+															Cris Miura contou à Startupi por que as três investidoras da
+															edutech serão estratégicas.
+														</p>
+														<a href="https://startupi.com.br/2021/04/startup-que-facilita-a-gestao-de-aulas-on-line-recebe-investimento/"
+															target="_blank">
+															<button id="botaoLaranja">
+																Leia a Matéria!
+															</button>
+														</a>
+													</td>
+												</tr>
+											</table>
+											<!-- END #NAMIDIA // -->
+
+
+											<!-- BEGIN #NASREDES // -->
+											<table border="0" cellpadding="0" cellspacing="0" width="100%"
+												id="templateFundoBranco">
+												<tr>
+													<td valign="top" class="bodyContent" mc:edit="body_content">
+														<h3 id="h3Roxo">
+															#Nasredes
+														</h3>
+														<div id="templateImagemDoLadoDoTitulo">
+															<img src="https://weimpact-tech.github.io/newsletter/img/foto-nasredes.png"
+																alt="foto em preto e branco com ilustação de punhos fechados de várias etnias levantados"
+																style="width: 145px; height: 146px; margin-left: 15px" />
+															<h3 id="h3Roxo">
+																Perdeu esse conteúdo?
+															</h3>
+														</div>
+														<p>
+															Nossa investida <a href=" https://pontue.com.br/"
+																target="_blank">Pontue</a>, plataforma SaaS de
+															aprendizagem,
+															encerrou sua
+															primeira rodada de
+															investimento com aportes também do Eleva Educação e da WIM
+															Angels. A cofundadora e CEO
+															Cris Miura contou à Startupi por que as três investidoras da
+															edutech serão estratégicas.
+														</p>
+														<a href="https://startupi.com.br/2021/04/startup-que-facilita-a-gestao-de-aulas-on-line-recebe-investimento/"
+															target="_blank">
+															<button id="botaoLaranja">
+																Leia a Matéria!
+															</button>
+														</a>
+													</td>
+												</tr>
+											</table>
+											<!-- END #NASREDES // -->
 										</td>
+
+
 									</tr>
 								</table>
 								<!-- // END BODY -->
@@ -984,13 +1174,13 @@
 							</td>
 						</tr>
 						<tr>
-							<td align="center" valign="top">
+							<td align=" center" valign="top">
 								<!-- BEGIN FOOTER // -->
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
 									<tr>
 										<td valign="top" class="footerContent" mc:edit="footer_content00">
-											<a href="*|TWITTER:PROFILEURL|*">Follow on Twitter</a>&nbsp;&nbsp;&nbsp;<a
-												href="*|FACEBOOK:PROFILEURL|*">Friend on
+											<a href="*|TWITTER:PROFILEURL|*">Follow on
+												Twitter</a>&nbsp;&nbsp;&nbsp;<a href="*|FACEBOOK:PROFILEURL|*">Friend on
 												Facebook</a>&nbsp;&nbsp;&nbsp;<a href="*|FORWARD|*">Forward to
 												Friend</a>&nbsp;
 										</td>
@@ -998,7 +1188,8 @@
 									<tr>
 										<td valign="top" class="footerContent" style="padding-top:0;"
 											mc:edit="footer_content01">
-											<em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights
+											<em>Copyright &copy; *|CURRENT_YEAR|*
+												*|LIST:COMPANY|*, All rights
 												reserved.</em>
 											<br />
 											*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
@@ -1012,8 +1203,9 @@
 									<tr>
 										<td valign="top" class="footerContent"
 											style="padding-top:0; padding-bottom:40px;" mc:edit="footer_content02">
-											<a href="*|UNSUB|*">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;<a
-												href="*|UPDATE_PROFILE|*">update subscription preferences</a>&nbsp;
+											<a href="*|UNSUB|*">unsubscribe from this
+												list</a>&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*">update
+												subscription preferences</a>&nbsp;
 										</td>
 									</tr>
 								</table>
