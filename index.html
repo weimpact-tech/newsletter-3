@@ -4,7 +4,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>*|MC:SUBJECT|*</title>
+	<title>We Impact News</title>
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,700&family=Poppins:wght@500;600;700&display=swap');
 
@@ -205,14 +205,14 @@
 			/*@editable*/
 			font-size: 21px;
 			/*@editable*/
-			font-style: italic;
+			font-style: normal;
 			/*@editable*/
 			font-weight: 700;
 			/*@editable*/
 			line-height: 100%;
 			/*@editable*/
 			letter-spacing: normal;
-			margin-top: 25px;
+			margin-top: 20px;
 			margin-right: 0;
 			margin-bottom: 10px;
 			margin-left: 0;
@@ -404,9 +404,9 @@
 			font-size: 18px;
 			/*@editable*/
 			line-height: 150%;
-			padding-top: 20px;
+			padding-top: 15px;
 			padding-right: 20px;
-			padding-bottom: 20px;
+			padding-bottom: 15px;
 			padding-left: 20px;
 			/*@editable*/
 			text-align: center;
@@ -442,6 +442,8 @@
 			padding: 20px 0px;
 			font-family: 'Open Sans', sans-serif;
 			font-style: italic;
+			font-size: 15px;
+			text-align: center;
 		}
 
 		#templateFundoBranco {
@@ -456,6 +458,12 @@
 			width: 100%
 		}
 
+		#templateFooterRoxo {
+			text-align: center;
+			background-color: #48139a;
+			width: 100%;
+		}
+
 		#templateFundoVerde {
 			background-color: #52919e;
 		}
@@ -468,20 +476,28 @@
 
 		#h3Branco {
 			font-size: 21px;
+			line-height: 31px;
 			font-family: 'Poppins', sans-serif;
 			font-weight: 700;
-			margin: 25px 0px 0px;
+			margin: 20px 0px 0px;
 			color: white !important;
-			padding-bottom: 20px;
 		}
 
 		#h3Roxo {
 			font-size: 21px;
+			line-height: 31px;
 			font-family: 'Poppins', sans-serif;
 			font-weight: 700;
-			margin: 25px 0px 0px;
+			margin: 20px 0px 0px;
 			color: #48139a !important;
-			padding-bottom: 20px;
+		}
+
+		#h3RoxoNaMidia {
+			font-size: 21px;
+			line-height: 31px;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 700;
+			color: #48139a !important;
 		}
 
 		#botaoRoxo {
@@ -506,6 +522,17 @@
 			background-color: #bb3d22;
 		}
 
+		#botaoBranco {
+			border: none;
+			margin-bottom: 20px;
+			font-weight: 700;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 15px;
+			height: 25px;
+			color: #212121;
+			background-color: #ffffff;
+		}
+
 		#subTituloWin {
 			padding-left: 20px;
 			padding-right: 20px;
@@ -515,25 +542,47 @@
 		}
 
 		p {
+			font-size: 16px;
 			text-align: justify;
 		}
 
 		#pBranco {
 			padding-left: 20px;
 			padding-right: 20px;
-			font-size: 18px;
+			font-size: 16px;
 			font-family: 'Open Sans', sans-serif;
 			margin: 25px 0px 20px;
 			color: white;
+		}
+
+		#pBrancoFooter {
+			font-size: 16px;
+			font-family: 'Open Sans', sans-serif;
+			color: white;
+			font-style: italic;
+			text-align: center;
+		}
+
+		#pCinzaFooter {
+			font-size: 15px;
+			font-family: 'Open Sans', sans-serif;
+			color: #212121;
+			text-align: center;
 		}
 
 		#pBlocoCompartilhe {
 			margin: 50px 50px;
 			font-family: 'Poppins', sans-serif;
 			font-weight: 600;
-			font-size: 18px;
+			font-size: 16px;
 			color: #ffffff;
+		}
 
+		#pSemiBold {
+			font-size: 18px;
+			line-height: 28px;
+			font-weight: 600;
+			text-align: center;
 		}
 
 
@@ -550,6 +599,7 @@
 			background-color: #F4F4F4;
 			/*@editable*/
 			border-top: 1px solid #FFFFFF;
+			;
 		}
 
 		/**
@@ -562,17 +612,17 @@
 			/*@editable*/
 			color: #808080;
 			/*@editable*/
-			font-family: Helvetica;
+			font-family: 'Open Sans', sans-serif;
 			/*@editable*/
 			font-size: 10px;
 			/*@editable*/
 			line-height: 150%;
-			padding-top: 20px;
+			padding-top: 20px !important;
 			padding-right: 20px;
 			padding-bottom: 20px;
 			padding-left: 20px;
 			/*@editable*/
-			text-align: justify;
+			text-align: center;
 		}
 
 		/**
@@ -770,41 +820,13 @@
 							<td align="center" valign="top">
 
 
-								<!-- BEGIN PREHEADER // -->
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
-									<tr>
-										<td valign="top" class="preheaderContent"
-											style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;"
-											mc:edit="preheader_content00">
-											Use this area to offer a short teaser of your email's content. Text here
-											will show in the preview area of some email clients.
-										</td>
-										<!-- *|IFNOT:ARCHIVE_PAGE|* -->
-										<td valign="top" width="180" class="preheaderContent"
-											style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;"
-											mc:edit="preheader_content01">
-											Email not displaying correctly?<br /><a href="*|ARCHIVE|*"
-												target="_blank">View it in your browser</a>.
-										</td>
-										<!-- *|END:IF|* -->
-									</tr>
-								</table>
-								<!-- // END PREHEADER -->
-
-
-							</td>
-						</tr>
-						<tr>
-							<td align="center" valign="top">
-
-
 								<!-- BEGIN HEADER // -->
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
 									<tr>
 										<td valign="top" class="headerContent">
-											<img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png"
-												style="max-width:600px;" id="headerImage" mc:label="header_image"
-												mc:edit="header_image" mc:allowdesigner mc:allowtext />
+											<img src="./img/Header_Logo.png" style="max-width:600px;" id="headerImage"
+												mc:label="header_image" mc:edit="header_image" mc:allowdesigner
+												mc:allowtext />
 										</td>
 									</tr>
 								</table>
@@ -828,40 +850,55 @@
 												id="templateFundoBranco">
 												<tr>
 													<td valign="top" class="bodyContent" mc:edit="body_content">
-														<h1>#1</h1>
+														<h1>#2</h1>
 														<p id="spam">
 															Não queremos ir para o spam! =( selecione este email como
 															“confiável” ou mova-o para a Caixa de
 															Entrada.
 														</p>
-														<img src="https://weimpact-tech.github.io/newsletter/img/ilustra-o-destaque.png"
+														<img src="./img/Imagem_Destaque.png"
 															alt="+267 anos nos separam da igualdade de gênero em participação econômica e oportunidades" />
 														<br />
 														<br />
-														<h3> Por que lutar pela igualdade de gênero AGORA?</h3>
-														<p>
-															Embora o maior gap de gênero apontado pelo
-															<a href="https://www.weforum.org/reports/global-gender-gap-report-2021"
-																target="_blank">Global Gender
-																Gap
-																Report 2021</a>
-															esteja relacionado à participação das mulheres na política,
-															<strong>participação na economia e
-																oportunidades</strong> são os
-															campos que levarão mais tempo
-															para se tornarem igualitários em todo o mundo:
-															exatamente <strong>267,5</strong> anos se
-															continuarmos no ritmo atual.
-														</p>
-														<br />
-														<br />
-														<a href="https://www.weforum.org/reports/global-gender-gap-report-2021"
-															target="_blank">
-															<button id="botaoRoxo">
-																<i><strong>Acesse o Global Gender Gap Report
-																		2021</strong></i>
-															</button>
-														</a>
+														<h3> Ser ou não ser? Eis o que deveria ser uma questão! </h3>
+														<p>Em seu livro “O Momento de Voar”, Melinda Gates defende que a
+															chave para a liberdade feminina (e para o fim de
+															desigualdades, pobreza, fome...) é o acesso ao planejamento
+															familiar, tanto para que mulheres possam decidir quando ter
+															filhos, como também escolher <strong>não tê-los</strong> se
+															não tiverem
+															condições ou não quiserem.</p>
+														<p>Enxergar a maternidade como uma <strong>opção da
+																mulher</strong> não é algo
+															automático, apesar de a tarefa integral de cuidar dos filhos
+															recair majoritariamente sobre ela. Fala-se bastante sobre a
+															completude feminina só ser alcançada ao se tornar mãe,
+															instinto materno, entre outros...</p>
+														<p>Ao mesmo tempo, empresas questionam, de formas veladas e às
+															vezes explícitas, a capacidade de colaboração das mulheres a
+															despeito de que podem vir a ter, estão gerando ou já tiveram
+															filhos. Pagam a elas salários mais baixos, destinam a seus
+															negócios uma parcela mínima de investimentos e permitem no
+															seu dia a dia uma série de microagressões</p>
+														<p>Se não somos mães, não estamos completas. Quando somos,
+															sofremos preconceitos no trabalho e vivemos sobrecarregadas.
+															Existe resposta possível pra nós, mulheres?</p>
+														<p>Em um país onde mais de 11 milhões de lares são sustentados
+															por mulheres segundo o IBGE, falta para que a conta feche
+															considerar que viver e ser responsável por outras vidas,
+															muitas vezes sozinha, demanda dinheiro. Mais de 70% das mães
+															com filhos pequenos trabalham fora. Enquanto não fazer isso
+															não é uma opção para a maioria delas, escolher <strong>ser
+																ou não ser mãe</strong> não deveria ser motivo para
+															tanto
+															espanto e
+															julgamentos. </p>
+														<p>Na outra ponta, uma mudança cultural nas empresas é
+															fundamental para que as mulheres que já são ou desejam ser
+															mães possam contar com a devida estrutura, acolhimento e
+															empatia em seus locais de trabalho. Mas esse é um assunto
+															para a coluna <strong>#DiversidadenaPrática</strong>, aqui
+															embaixo. </p>
 													</td>
 												</tr>
 											</table>
@@ -899,61 +936,57 @@
 															#WIN – WE Impact Network
 														</h3>
 														<h3>
-															A tecnologia como ferramenta de empoderamento
+															<p id="pSemiBold">Para sermos excelentes profissionais e
+																supermães, os pais precisam participar sim</p>
 														</h3>
-														<img src="https://weimpact-tech.github.io/newsletter/img/foto-win.png"
+														<img src="./img/Foto_WIN_Monica.png"
 															alt="foto em preto e branco de uma senhora sorrindo" />
 														<p id="subTituloWin">
-															por Tânia Cosentino, presidente da Microsoft Brasil
+															Por Mônica Granzo, fundadora e CEO da Smarkets e mãe da
+															Laura, 8 anos
 														</p>
 														<p>
-															Para mudarmos o cenário de desigualdade de gênero na
-															política, economia, saúde e educação,
-															áreas avaliadas pelo Global Gender Gap Report, é necessário
-															agirmos com muita
-															intencionalidade, e aqui temos uma oportunidade única de
-															<strong> incentivar mulheres e meninas a seguirem a carreira
-																de exatas.</strong> 
+															A maternidade sempre foi entendida como algo essencialmente
+															feminino, natural, instintivo. Mas, além do fator biológico
+															da gestação, não há razão alguma para que nós exerçamos o
+															papel de educadoras sozinhas.
 														</p>
 														<p>
-															Na Microsoft, acreditamos que a <strong>tecnologia</strong>
-															e a
-															<strong>Inteligência Artificial</strong> têm um enorme
-															potencial para se tornarem os
-															principais impulsionadores da recuperação e desenvolvimento
-															social e econômico do Brasil, e
-															estas são ferramentas poderosas para ampliarmos a
-															participação de mulheres no mercado de
-															trabalho, na liderança das empresas e na <strong>fundação de
-																startups</strong>.
+															A tarefa de criar os filhos sempre foi assumida por nós,
+															mulheres, e determinada por uma sociedade patriarcal
+															dominada pelos homens.
 														</p>
-														<ul>
-															<li style="margin: 10px">
-																Programa de Capacitação de Mulheres Empreendedoras, em
-																parceria com a International
-																Finance Corporation (IFC), membro do Grupo Banco
-																Mundial, e apoio da
-																<strong>WE Impact</strong> e da WE Ventures.
-																<a href="https://aka.ms/IFCSeries3" target="_blank">O
-																	próximo workshop será no dia 5 de maio.</a>
-															</li>
-															<li style="margin: 10px">
-																O portal <a href="https://maismulheres.tech/"
-																	target="_blank">maismulheres.tech</a>, com seis
-																trilhas
-																de
-																aprendizagem gratuitas para capacitar 100 mil mulheres
-																para o mercado de tecnologia até
-																novembro de 2021, em parceria com a WoMakersCode.
-															</li>
-															<li style="margin: 10px">
-																Extensão de
-																<a href="https://news.microsoft.com/pt-br/30-milhoes-de-pessoas-em-todo-o-mundo-adquiriram-habilidades-digitais-durante-a-pandemia-de-covid-19/"
-																	target="_blank">cursos
-																	de capacitação gratuitos</a>
-																em conjunto com o Linkedin até dezembro de 2021.
-															</li>
-														</ul>
+														<p>Porém, apesar de conseguirmos conciliar a carreira e a
+															responsabilidade de sermos mães, ainda é muito difícil para
+															muitas delegar tal tarefa para os homens - seja para o
+															companheiro ou o pai da criança. O que acaba influenciando
+															ainda mais na desigualdade de gêneros, seja no casamento, na
+															educação dos filhos e no âmbito profissional.</p>
+														<p>Saber delegar é uma qualidade que nem todo mundo possui.</p>
+														<p>Dois dias antes da Laura nascer, eu me sentei com a pessoa
+															que iria me substituir no trabalho preocupada com as tarefas
+															que ia deixar para ela. Mas, em casa e na pós-maternidade, a
+															equidade foi imprescindível para eu continuar trilhando
+															minha carreira de sucesso. Enquanto eu saia para trabalhar,
+															Laura, com apenas dois meses, ficava sob os cuidados part
+															time do pai e uma ajudante. Eu amamentava durante a noite e
+															madrugada.</p>
+														<p>Negociar e chegar a um acordo com o companheiro e/ou o pai da
+															criança é importantíssimo para manter um bom relacionamento,
+															determinante para desenvolvimento e educação dos filhos,
+															além de possibilitar um equilíbrio com a carga de trabalho.
+														</p>
+														<p>Eu e o pai da Laura sempre tivemos bom senso e preservamos
+															isso durante todo o namoro, no casamento e, depois, com a
+															separação. É assim que criamos uma filha saudável e
+															autônoma.</p>
+														<p>E, mesmo com tantos desafios de ser uma excelente
+															profissional e uma supermãe, em nenhum momento tive que
+															escolher entre um papel ou o outro. Pelo contrário, minha
+															filha foi a minha inspiração e fortaleza para empreender.
+														</p>
+														<p>Com apenas dois meses de vida da Laura, recebi um convite
+															para liderar um projeto – nascia a Smarkets.</p>
 													</td>
 												</tr>
 											</table>
@@ -967,13 +1000,9 @@
 													<td valign="top" class="bodyContent" mc:edit="body_content">
 														<h3 id="h3Branco">
 															#DiversidadenaPrática
+															<p style="margin-top: 25px"></p>
 														</h3>
-														<h3 id="h3Branco">
-															Nossa busca por uma DevWeb e o conceito de ações afirmativas
-														</h3>
-														<img src="https://weimpact-tech.github.io/newsletter/img/imagem-diversidadena-pratica.png"
-															alt="ilustração minimalista representando mulheres diversas"
-															style="height: 160px;" />
+														<img src="./img/Imagem_DiversidadenaPratica.png" />
 														<p id="pBranco">
 															No ano passado, abrimos na WE Impact uma vaga para
 															Desenvolvedora Web e fomos surpreendidas
@@ -1018,31 +1047,37 @@
 													<td valign="top" class="bodyContent" mc:edit="body_content">
 														<h3 id="h3Branco">
 															#DicadaCEO
+															<p style="margin-top: 25px"></p>
 														</h3>
-														<img src="https://weimpact-tech.github.io/newsletter/img/foto-dica-da-ceo.png"
-															alt="foto em preto e branco da CEO da WE IMPACT, Lícia"
-															style="width: 140px;" />
-														<h3 id="h3Branco">
-															Nossa busca por uma DevWeb e o conceito de ações afirmativas
-														</h3>
+														<img src="./img/Foto_DicadaCEO.png" />
 														<p id="pBranco">
-															Para conseguir resultados mais potentes e sustentáveis,
-															aposte na diversidade. Entretanto, é
-															necessário que esta aposta seja feita de maneira coerente e
-															responsável. A organização deve se
-															responsabilizar por criar um ambiente que conduza as
-															relações entre os diferentes perfis de seus
-															‘recursos humanos’, para que seja possível que todos
-															desenvolvam seus potenciais, viabilizando
-															correlacionar produtividade e retorno. Não basta montar uma
-															equipe e liderança diversas - é
-															necessário pavimentar o caminho para que se chegue à
-															equidade de oportunidades e potencialidades
-															dentro do ambiente de trabalho.
+															“Sim, é um desafio equilibrar e nos sentirmos em paz com os
+															vários papéis que nós, mulheres, nos propomos a fazer,
+															sempre com grande dedicação e responsabilidade - entre eles,
+															ser mãe, ser executiva ou CEO. E a grande dica é estar
+															presente e dar o seu melhor em cada papel, em cada momento,
+															sem culpa.
+														</p>
+														<p id="pBranco">
+															Nem sempre a dedicação de tempo e energia a cada um desses
+															papéis vai estar equilibrada, mas o segredo é não se cobrar
+															tanto e, sobretudo, não se deixar ser cobrada por crenças
+															limitantes do grupo em que está inserida. É um exercício
+															constante de reflexão, mas assim como numa empresa, quando o
+															seu propósito de vida e a fórmula que funciona para você
+															(seja de trabalho ou família) estão claras, as decisões
+															sobre que tempo alocar a que papel ficam mais fáceis.
+														</p>
+														<p id="pBranco">
+															No meu caso, o meu trabalho faz parte do meu propósito de
+															vida, da minha realização pessoal, assim como ser mãe de
+															três filhas. Precisamos de mais leveza e orgulho das
+															pequenas e grandes conquistas e menos culpas.”
 														</p>
 														<p id="pBranco" align="center">
 															<i>
-																– Lícia Souza, CEO da WE Impact
+																- Monica Blatyta, cofundadora e CEO da Babel Azza e da
+																EqWOW
 															</i>
 														</p>
 													</td>
@@ -1057,9 +1092,10 @@
 												<tr>
 													<td valign="top" class="bodyContent" mc:edit="body_content">
 														<h3 id="h3Roxo">
-															#ELASIMPACTAM
+															#ElasImpactam
+															<p style="margin-top: 25px"></p>
 														</h3>
-														<img src="https://weimpact-tech.github.io/newsletter/img/foto-elas-impactam.png"
+														<img src="./img/Imagem_ElasImpactam.png"
 															alt="foto em preto e branco com ilustação de punhos fechados de várias etnias levantados" />
 														<p>
 															Durante o mês da mulher, a
@@ -1087,34 +1123,49 @@
 											<!-- END #ELASIMPACTAM // -->
 
 
+											<!-- BEGIN #DIVISOR // -->
+											<table border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td valign="top" class="bodyContent" mc:edit="body_content">
+														<img src="./img/Divisor_Sessoes.png" />
+													</td>
+												</tr>
+											</table>
+											<!-- END #DIVISOR // -->
+
+
 											<!-- BEGIN #NAMIDIA // -->
 											<table border="0" cellpadding="0" cellspacing="0" width="100%"
 												id="templateFundoBranco">
 												<tr>
 													<td valign="top" class="bodyContent" mc:edit="body_content">
-														<h3 id="h3Roxo">
+
+														<h3 id="h3RoxoNaMidia">
 															#Namídia
 														</h3>
-														<div id="templateImagemDoLadoDoTitulo">
-															<h3 id="h3Roxo">
-																Startup que facilita gestão de aulas online recebe
-																investimento
-															</h3>
-															<img src="https://weimpact-tech.github.io/newsletter/img/foto-namidia.png"
-																alt="foto em preto e branco com ilustação de punhos fechados de várias etnias levantados" />
-														</div>
+														<p style="margin-top: 25px"></p>
+														<img src="./img/Imagem_NaMidia.png"
+															alt="foto em preto e branco com ilustação de punhos fechados de várias etnias levantados" />
+														<h3 id="h3Roxo">
+															<p id="pSemiBold">Advogada cria iniciativa de R$ 5 mi para
+																apoiar startups de mulheres</p>
+														</h3>
 														<p>
-															Nossa investida <a href=" https://pontue.com.br/"
-																target="_blank">Pontue</a>, plataforma SaaS de
-															aprendizagem,
-															encerrou sua
-															primeira rodada de
-															investimento com aportes também do Eleva Educação e da WIM
-															Angels. A cofundadora e CEO
-															Cris Miura contou à Startupi por que as três investidoras da
-															edutech serão estratégicas.
+															Neste <a
+																href="https://www.linkedin.com/feed/hashtag/?keywords=diadasm%C3%A3es&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A6797558073759154176"
+																target="_blank">#DiadasMães</a>, nossa CEO <a
+																href="https://www.linkedin.com/in/ACoAAAlpyssBz9GUnD0wlqzwKqfmwMfYL0h-ROU/"
+																target="_blank">Lícia
+																Souza</a> contou à <a href="https://www.linkedin.com/company/exame-com/
+																target=" _blank">EXAME</a>
+															sobre como a gestação da sua filha coincidiu com a criação
+															da <a href="https://www.linkedin.com/company/weimpact-tech/"
+																target="_blank">WE
+																Impact</a>, marcando também uma nova fase profissional -
+															antes executiva, ela se tornou empreendedora que apoia os
+															negócios de outras mulheres.
 														</p>
-														<a href="https://startupi.com.br/2021/04/startup-que-facilita-a-gestao-de-aulas-on-line-recebe-investimento/"
+														<a href="https://exame.com/pme/advogada-cria-iniciativa-de-r-5-mi-para-apoiar-startups-de-mulheres/"
 															target="_blank">
 															<button id="botaoLaranja">
 																Leia a Matéria!
@@ -1134,29 +1185,22 @@
 														<h3 id="h3Roxo">
 															#Nasredes
 														</h3>
-														<div id="templateImagemDoLadoDoTitulo">
-															<img src="https://weimpact-tech.github.io/newsletter/img/foto-nasredes.png"
-																alt="foto em preto e branco com ilustação de punhos fechados de várias etnias levantados"
-																style="width: 145px; height: 146px; margin-left: 15px" />
-															<h3 id="h3Roxo">
-																Perdeu esse conteúdo?
-															</h3>
-														</div>
+														<p style="margin-top: 25px"></p>
+														<img src="./img/Imagem_Nasredes.png" />
+														<h3 id="h3Roxo">
+															<p id="pSemiBold">Perdeu esse conteúdo? </p>
+														</h3>
 														<p>
-															Nossa investida <a href=" https://pontue.com.br/"
-																target="_blank">Pontue</a>, plataforma SaaS de
-															aprendizagem,
-															encerrou sua
-															primeira rodada de
-															investimento com aportes também do Eleva Educação e da WIM
-															Angels. A cofundadora e CEO
-															Cris Miura contou à Startupi por que as três investidoras da
-															edutech serão estratégicas.
+															Com base em relatos reais, reunimos em um post no nosso
+															Instagram 4 situações que muitas mulheres vivem no ambiente
+															de trabalho por conta da maternidade – e demos duas
+															sugestões para acabar com os preconceitos reproduzidos
+															dentro das empresas.
 														</p>
-														<a href="https://startupi.com.br/2021/04/startup-que-facilita-a-gestao-de-aulas-on-line-recebe-investimento/"
+														<a href="https://www.instagram.com/p/COjI-yjHSwP/?igshid=1serqyer5im8t"
 															target="_blank">
 															<button id="botaoLaranja">
-																Leia a Matéria!
+																Clique para conferir
 															</button>
 														</a>
 													</td>
@@ -1173,18 +1217,39 @@
 
 							</td>
 						</tr>
+
+
 						<tr>
 							<td align=" center" valign="top">
 								<!-- BEGIN FOOTER // -->
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooterRoxo">
 									<tr>
-										<td valign="top" class="footerContent" mc:edit="footer_content00">
-											<a href="*|TWITTER:PROFILEURL|*">Follow on
-												Twitter</a>&nbsp;&nbsp;&nbsp;<a href="*|FACEBOOK:PROFILEURL|*">Friend on
-												Facebook</a>&nbsp;&nbsp;&nbsp;<a href="*|FORWARD|*">Forward to
-												Friend</a>&nbsp;
+										<td>
+										<td id="templateFooterRoxo">
+											<p id="pBrancoFooter"> Recebeu este email de alguém?</p>
+											<a href=" https://weimpact-1.hubspotpagebuilder.com/assine-a-we-impact-news?utm_source=Newletter&utm_medium=email&utm_campaign=newsletter"
+												target="_blank">
+												<button id="botaoBranco" ">
+													<i><strong>Assine a WE Impact News</strong></i>
+												</button>
+											</a>
 										</td>
 									</tr>
+								</table>
+								
+								<table border=" 0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
+									<tr>
+										<td align="center">
+											<p id="pCinzaFooter">Siga nossas redes sociais</p>
+											<a href="https://www.linkedin.com/company/weimpact-tech" target="_blank">
+												<img src="https://weimpact-tech.github.io/newsletter/img/linkedin-icon.png"
+													alt="linkedin" /></a>
+											<a href="https://www.instagram.com/weimpact.tech/" target="_blank">
+												<img src="https://weimpact-tech.github.io/newsletter/img/insta-icon.png"
+													alt="instagram" /></a>
+										</td>
+									</tr>
+
 									<tr>
 										<td valign="top" class="footerContent" style="padding-top:0;"
 											mc:edit="footer_content01">
