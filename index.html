@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Type" name="viewport" content="text/html width=device-width, initial-scale=1; charset=UTF-8" />
 	<title>We Impact News</title>
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,700&family=Poppins:wght@500;600;700&display=swap');
@@ -70,6 +70,7 @@
 			line-height: 100%;
 			outline: none;
 			text-decoration: none;
+			width: 100%;
 		}
 
 		table {
@@ -90,11 +91,12 @@
 		/* ========== Page Styles ========== */
 
 		#bodyCell {
-			padding: 20px;
+			padding: 10px;
 		}
 
 		#templateContainer {
-			width: 600px;
+			max-width: 600px;
+			min-width: 360px;
 		}
 
 		/**
@@ -646,164 +648,8 @@
 			text-decoration: underline;
 		}
 
-		/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
-
-		@media only screen and (max-width: 480px) {
-
-			/* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
-			body,
-			table,
-			td,
-			p,
-			a,
-			li,
-			blockquote {
-				-webkit-text-size-adjust: none !important;
-			}
-
-			/* Prevent Webkit platforms from changing default text sizes */
-			body {
-				width: 100% !important;
-				min-width: 100% !important;
-			}
-
-			/* Prevent iOS Mail from adding padding to the body */
-
-			/* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
-			#bodyCell {
-				padding: 10px !important;
-			}
-
-			/* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
-
-			/* ======== Page Styles ======== */
-
-			/**
-				* @tab Mobile Styles
-				* @section template width
-				* @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
-				*/
-			#templateContainer {
-				max-width: 600px !important;
-				/*@editable*/
-				width: 100% !important;
-			}
-
-			/**
-				* @tab Mobile Styles
-				* @section heading 1
-				* @tip Make the first-level headings larger in size for better readability on small screens.
-				*/
-			h1 {
-				/*@editable*/
-				font-size: 24px !important;
-				/*@editable*/
-				line-height: 100% !important;
-			}
-
-			/**
-				* @tab Mobile Styles
-				* @section heading 2
-				* @tip Make the second-level headings larger in size for better readability on small screens.
-				*/
-			h2 {
-				/*@editable*/
-				font-size: 20px !important;
-				/*@editable*/
-				line-height: 100% !important;
-			}
-
-			/**
-				* @tab Mobile Styles
-				* @section heading 3
-				* @tip Make the third-level headings larger in size for better readability on small screens.
-				*/
-			h3 {
-				/*@editable*/
-				font-size: 18px !important;
-				/*@editable*/
-				line-height: 100% !important;
-			}
-
-			/**
-				* @tab Mobile Styles
-				* @section heading 4
-				* @tip Make the fourth-level headings larger in size for better readability on small screens.
-				*/
-			h4 {
-				/*@editable*/
-				font-size: 16px !important;
-				/*@editable*/
-				line-height: 100% !important;
-			}
-
-			/* ======== Header Styles ======== */
-
-			#templatePreheader {
-				display: none !important;
-			}
-
-			/* Hide the template preheader to save space */
-
-			/**
-				* @tab Mobile Styles
-				* @section header image
-				* @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
-				*/
-			#headerImage {
-				height: auto !important;
-				/*@editable*/
-				max-width: 600px !important;
-				/*@editable*/
-				width: 100% !important;
-			}
-
-			/**
-				* @tab Mobile Styles
-				* @section header text
-				* @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-				*/
-			.headerContent {
-				/*@editable*/
-				font-size: 20px !important;
-				/*@editable*/
-				line-height: 125% !important;
-			}
-
-			/* ======== Body Styles ======== */
-
-			/**
-				* @tab Mobile Styles
-				* @section body text
-				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-				*/
-			.bodyContent {
-				/*@editable*/
-				font-size: 18px !important;
-				/*@editable*/
-				line-height: 125% !important;
-			}
-
-			/* ======== Footer Styles ======== */
-
-			/**
-				* @tab Mobile Styles
-				* @section footer text
-				* @tip Make the body content text larger in size for better readability on small screens.
-				*/
-			.footerContent {
-				/*@editable*/
-				font-size: 14px !important;
-				/*@editable*/
-				line-height: 115% !important;
-			}
-
-			.footerContent a {
-				display: block !important;
-			}
-
-			/* Place footer social and utility links on their own lines, for easier access */
-		}
+		/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */		 
+		
 	</style>
 </head>
 
@@ -824,7 +670,7 @@
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
 									<tr>
 										<td valign="top" class="headerContent">
-											<img src="./img/Header_Logo.png" style="max-width:600px;" id="headerImage"
+											<img src="https://weimpact-tech.github.io/newsletter-2/img/Header_Logo.png" style="max-width:600px;" id="headerImage"
 												mc:label="header_image" mc:edit="header_image" mc:allowdesigner
 												mc:allowtext />
 										</td>
@@ -856,7 +702,7 @@
 															“confiável” ou mova-o para a Caixa de
 															Entrada.
 														</p>
-														<img src="./img/Imagem_Destaque.png"
+														<img src="https://weimpact-tech.github.io/newsletter-2/img/Imagem_Destaque.png"
 															alt="+267 anos nos separam da igualdade de gênero em participação econômica e oportunidades" />
 														<br />
 														<br />
@@ -939,7 +785,7 @@
 															<p id="pSemiBold">Para sermos excelentes profissionais e
 																supermães, os pais precisam participar sim</p>
 														</h3>
-														<img src="./img/Foto_WIN_Monica.png"
+														<img src="https://weimpact-tech.github.io/newsletter-2/img/Foto_WIN_Monica.png"
 															alt="foto em preto e branco de uma senhora sorrindo" />
 														<p id="subTituloWin">
 															Por Mônica Granzo, fundadora e CEO da Smarkets e mãe da
@@ -1002,7 +848,7 @@
 															#DiversidadenaPrática
 															<p style="margin-top: 25px"></p>
 														</h3>
-														<img src="./img/Imagem_DiversidadenaPratica.png" />
+														<img src="https://weimpact-tech.github.io/newsletter-2/img/Imagem_DiversidadenaPratica.png" />
 														<p id="pBranco">
 															No ano passado, abrimos na WE Impact uma vaga para
 															Desenvolvedora Web e fomos surpreendidas
@@ -1049,7 +895,7 @@
 															#DicadaCEO
 															<p style="margin-top: 25px"></p>
 														</h3>
-														<img src="./img/Foto_DicadaCEO.png" />
+														<img src="https://weimpact-tech.github.io/newsletter-2/img/Foto_DicadaCEO.png" />
 														<p id="pBranco">
 															“Sim, é um desafio equilibrar e nos sentirmos em paz com os
 															vários papéis que nós, mulheres, nos propomos a fazer,
@@ -1095,7 +941,7 @@
 															#ElasImpactam
 															<p style="margin-top: 25px"></p>
 														</h3>
-														<img src="./img/Imagem_ElasImpactam.png"
+														<img src="https://weimpact-tech.github.io/newsletter-2/img/Imagem_ElasImpactam.png"
 															alt="foto em preto e branco com ilustação de punhos fechados de várias etnias levantados" />
 														<p>
 															Durante o mês da mulher, a
@@ -1127,7 +973,7 @@
 											<table border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
 													<td valign="top" class="bodyContent" mc:edit="body_content">
-														<img src="./img/Divisor_Sessoes.png" />
+														<img src="https://weimpact-tech.github.io/newsletter-2/img/Divisor_Sessoes.png" />
 													</td>
 												</tr>
 											</table>
@@ -1144,7 +990,7 @@
 															#Namídia
 														</h3>
 														<p style="margin-top: 25px"></p>
-														<img src="./img/Imagem_NaMidia.png"
+														<img src="https://weimpact-tech.github.io/newsletter-2/img/Imagem_NaMidia.png"
 															alt="foto em preto e branco com ilustação de punhos fechados de várias etnias levantados" />
 														<h3 id="h3Roxo">
 															<p id="pSemiBold">Advogada cria iniciativa de R$ 5 mi para
@@ -1186,7 +1032,7 @@
 															#Nasredes
 														</h3>
 														<p style="margin-top: 25px"></p>
-														<img src="./img/Imagem_Nasredes.png" />
+														<img src="https://weimpact-tech.github.io/newsletter-2/img/Imagem_Nasredes.png" />
 														<h3 id="h3Roxo">
 															<p id="pSemiBold">Perdeu esse conteúdo? </p>
 														</h3>
